@@ -1,4 +1,5 @@
 use super::schema::urls;
+use diesel::{deserialize::Queryable, prelude::Insertable};
 use serde::{Deserialize, Serialize};
 
 //implementations for certain traits, queryable is auto data mapping, insertable is for inserting data into a database table,

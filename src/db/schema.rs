@@ -1,11 +1,9 @@
-// @generated automatically by Diesel CLI.
+use diesel::table;
 
-diesel::table! {
+table! {
     urls (id) {
         id -> Integer,
-        #[max_length = 255]
         original_url -> Varchar,
-        #[max_length = 8]
         short_code -> Varchar,
     }
 }
